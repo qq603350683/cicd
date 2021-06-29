@@ -11,6 +11,7 @@ import (
 var DB *gorm.DB
 
 func main() {
+	// test
 	// connString 用户名:密码@(主机地址:端口)/数据库名称?charset=utf8&parseTime=True&loc=Local
 	connString := fmt.Sprintf("%s:%s@(%s:%d)/%s?charset=utf8&parseTime=True&loc=Local", "root", "root", "127.0.0.1", 3306, "test_micro")
 	log.Println(connString)
