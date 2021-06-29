@@ -10,6 +10,16 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:5.7
+        env: 
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: root
+          MYSQL_PASSWORD: root
+          MYSQL_DATABASE: test_micro
+        ports:
+          - 3306:3306
     steps:
     - uses: actions/checkout@v2
 
