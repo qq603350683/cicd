@@ -11,8 +11,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      #MYSQL_HOST: 127.0.0.1
-      #MYSQL_ROOT_PASSWORD: root
+      MYSQL_HOST: 127.0.0.1
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: root
       MYSQL_PASSWORD: root
       MYSQL_DATABASE: test_micro
