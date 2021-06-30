@@ -10,3 +10,12 @@ func TestAddUser(t *testing.T) {
 		t.Error(err)
 	}
 }
+
+func TestAddUserCache(t *testing.T) {
+	ConnectRedis()
+
+	_, err := AddUserCache()
+	if err != nil {
+		t.Error(err)
+	}
+}

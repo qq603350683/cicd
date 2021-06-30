@@ -28,3 +28,13 @@ func AddUser() (bool, error) {
 
 	return true, nil
 }
+
+func AddUserCache() (bool, error) {
+	_, err := RedisClient.Set("a", "b", 0).Result()
+	if err != nil {
+		panic(err)
+		return false, err
+	}
+
+	return true, nil
+}

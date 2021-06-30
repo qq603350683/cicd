@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/user_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Go Test.TestAddUser in cicd/user">
+  <component name="RunManager" selected="Go Test.TestAddUserCache in cicd/user">
     <configuration name="go build cicd/user" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="cicd" />
       <working_directory value="$PROJECT_DIR$" />
@@ -62,8 +63,20 @@
       <pattern value="^TestAddUser$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestAddUserCache in cicd/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="cicd" />
+      <working_directory value="$PROJECT_DIR$/user" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="cicd/user" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestAddUserCache$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestAddUserCache in cicd/user" />
         <item itemvalue="Go Test.TestAddUser in cicd/user" />
         <item itemvalue="Go Build.go build cicd/user" />
       </list>
@@ -89,21 +102,21 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1624977074666">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1624980025304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624977074666" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1624977074666">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624980025304" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1624980025304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624977074666" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1624977074666">
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624980025304" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1624980025304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624977074666" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1624977074666">
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624980025304" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1624980025304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624977074666" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624980025304" />
   </component>
 </project>
