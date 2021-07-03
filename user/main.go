@@ -3,12 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	ConnectMysql()
+	var b bool
+	var err error
+
+	err = ConnectMysql()
+	if err != nil {
+		panic(err)
+	}
 
 	ConnectRedis()
 
-	var b bool
-	var err error
+
 
 	b, err = AddUser()
 	if err != nil {
