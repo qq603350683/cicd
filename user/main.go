@@ -16,14 +16,16 @@ func main() {
 
 	b, err = AddUser()
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
+		return
 	}
 
 	fmt.Println(b)
 
 	_, err = AddUserCache()
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
+		return
 	}
 }
 

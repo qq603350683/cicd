@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be87b8fe-a53a-454c-80ee-2dc08ddb5ff4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/user_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/user_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +42,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Go Test.TestAddUserCache in cicd/user">
     <configuration name="go build cicd/user" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -99,6 +104,10 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
+    <state x="625" y="197" key="#Go_Linter" timestamp="1625324012796">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="625" y="197" key="#Go_Linter/0.0.1920.1040@0.0.1920.1040" timestamp="1625324012796" />
     <state width="1876" height="315" key="GridCell.Tab.0.bottom" timestamp="1625064380022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -115,5 +124,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="315" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625064380022" />
+    <state x="463" y="151" key="SettingsEditor" timestamp="1625323959022">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1625323959022" />
   </component>
 </project>

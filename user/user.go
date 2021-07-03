@@ -1,6 +1,9 @@
 package main
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 type UserTest struct {
 	UserId int `json:"user_id,string" gorm:"type:bigint(20) unsigned auto_increment;not null;primary_key"`
@@ -22,6 +25,7 @@ func AddUser() (bool, error) {
 
 	err := DB.Create(user).Error
 	if err != nil {
+		fmt.Println(err)
 		return false, err
 	}
 
@@ -31,6 +35,7 @@ func AddUser() (bool, error) {
 func AddUserCache() (bool, error) {
 	_, err := RedisClient.Set("a", "b", 0).Result()
 	if err != nil {
+		fmt.Println(err)
 		return false, err
 	}
 

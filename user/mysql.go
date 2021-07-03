@@ -17,6 +17,7 @@ func ConnectMysql() error {
 	log.Println(connString)
 	db, err := gorm.Open("mysql", connString)
 	if err != nil {
+		fmt.Println(err)
 		return err
 	}
 
