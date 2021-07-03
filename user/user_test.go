@@ -2,15 +2,6 @@ package main
 
 import "testing"
 
-func TestAddUser(t *testing.T) {
-	ConnectMysql()
-
-	_, err := AddUser()
-	if err != nil {
-		t.Error(err)
-	}
-}
-
 func TestAddUserCache(t *testing.T) {
 	ConnectRedis()
 
@@ -18,4 +9,19 @@ func TestAddUserCache(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
+
+	t.Log("redis success")
 }
+
+func TestAddUser(t *testing.T) {
+	ConnectMysql()
+
+	_, err := AddUser()
+	if err != nil {
+		t.Error(err)
+	}
+
+	t.Log("mysql success")
+}
+
+
