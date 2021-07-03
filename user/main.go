@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	ConnectMysql()
 
@@ -12,6 +14,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Println(b)
 
 	_, err = AddUserCache()
 	if err != nil {
