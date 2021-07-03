@@ -5,9 +5,18 @@ func main() {
 
 	ConnectRedis()
 
-	AddUser()
+	var b bool
+	var err error
 
-	AddUserCache()
+	b, err = AddUser()
+	if err != nil {
+		panic(err)
+	}
+
+	_, err = AddUserCache()
+	if err != nil {
+		panic(err)
+	}
 }
 
 
