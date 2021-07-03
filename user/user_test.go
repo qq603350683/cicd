@@ -14,9 +14,12 @@ func TestAddUserCache(t *testing.T) {
 }
 
 func TestAddUser(t *testing.T) {
-	ConnectMysql()
+	err := ConnectMysql()
+	if err != nil {
+		return
+	}
 
-	_, err := AddUser()
+	_, err = AddUser()
 	if err != nil {
 		t.Error(err)
 	}
