@@ -5,7 +5,8 @@ import "fmt"
 func main() {
 	err2 := ConnectMysql()
 	if err2 != nil {
-		panic(err2)
+		fmt.Println(err2)
+		return
 	}
 
 	var b bool
