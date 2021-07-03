@@ -22,7 +22,6 @@ func AddUser() (bool, error) {
 
 	err := DB.Create(user).Error
 	if err != nil {
-		panic(err)
 		return false, err
 	}
 
@@ -32,7 +31,6 @@ func AddUser() (bool, error) {
 func AddUserCache() (bool, error) {
 	_, err := RedisClient.Set("a", "b", 0).Result()
 	if err != nil {
-		panic(err)
 		return false, err
 	}
 
