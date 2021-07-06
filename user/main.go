@@ -2,11 +2,9 @@ package main
 
 import "fmt"
 
-const (
-	password = "123456789"
-)
-
 func main() {
+	password := "123456789"
+
 	fmt.Println(password)
 
 	err2 := ConnectMysql()
