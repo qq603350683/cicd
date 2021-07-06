@@ -33,7 +33,7 @@ jobs:
         mysql -e 'CREATE DATABASE ${{ env.MYSQL_DATABASE }};' -u${{ env.MYSQL_USER }} -p${{ env.MYSQL_PASSWORD }}
     - uses: actions/checkout@v2
  
-    # 代码锋风格
+    # 检测代码风格
     - name: golangci-lint
       uses: golangci/golangci-lint-action@v2
       with:
@@ -44,7 +44,7 @@ jobs:
       run: |
         export PATH=$PATH:$(go env GOPATH)/bin
         go get github.com/securego/gosec/cm/gosec
-        gosec ./user
+        cd user; gosec ./
 
     - name: Set up Go
       uses: actions/setup-go@v2
