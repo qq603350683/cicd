@@ -44,7 +44,7 @@ jobs:
       run: |
         export PATH=$PATH:$(go env GOPATH)/bin
         go get github.com/securego/gosec/cm/gosec
-        gosec ./...
+        gosec ./user
 
     - name: Set up Go
       uses: actions/setup-go@v2
