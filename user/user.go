@@ -31,6 +31,17 @@ func AddUser() (bool, error) {
 	return true, nil
 }
 
+func UpdateUserNickname(userId int, nickname string) (bool, error) {
+	err := DB.Where("id = ?", userId).UpdateColumns(map[string] {
+		"nickname": "bbaaa",
+	}).Error
+	if err != nil {
+		return false, nil
+	}
+
+	return true, nil
+}
+
 func AddUserCache() (bool, error) {
 	_, err := RedisClient.Set("a", "b", 0).Result()
 	if err != nil {
