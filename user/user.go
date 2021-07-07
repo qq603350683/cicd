@@ -33,7 +33,7 @@ func AddUser() (bool, error) {
 
 func UpdateUserNickname(userId int, nickname string) (bool, error) {
 	var update map[string]interface{}
-	update["nickname"] = "bbbaaa"
+	update["nickname"] = nickname
 
 	err := DB.Where("id = ?", userId).UpdateColumns(update).Error
 	if err != nil {

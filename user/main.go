@@ -31,6 +31,12 @@ func main() {
 		fmt.Println(err)
 		return
 	}
+
+	_, err = UpdateUserNickname(1, "baiaisdias")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 }
 
 
