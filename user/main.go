@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Printf("develop udpate something....")
 	//password := "61fcb62dfa4c554fc68863c744897aa0"
 
 	//fmt.Println(password)
