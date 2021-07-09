@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"time"
 )
 
@@ -34,6 +35,8 @@ func AddUser() (bool, error) {
 func UpdateUserNickname(userId int, nickname string) (bool, error) {
 	update := make(map[string]interface{})
 	update["nickname"] = nickname
+
+	fmt.Printf("nickname update: %s", nickname)
 
 	err := DB.Where("id = ?", userId).UpdateColumns(update).Error
 	if err != nil {
