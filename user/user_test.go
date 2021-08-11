@@ -24,7 +24,7 @@ func TestAddUser(t *testing.T) {
 		t.Error(err)
 	}
 
-	t.Log("mysql success")
+	t.Log("mysql success11111111111")
 }
 
 
